@@ -1,0 +1,299 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  position: right # position of the sidebar : left or right
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Tiffany Forkner
+  tagline: Full Stack Developer
+  avatar: profile.jpeg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: tiffany.forkner@gmail.com
+  timezone: America/New_York # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  linkedin: tiffanyforkner
+  github: thetif
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+  languages:
+    title: Languages
+    info:
+    - idiom: English
+      level: Native
+
+    - idiom: German
+      level: B2
+
+  interests:
+    title: Interests
+    info:
+    - item: Programming
+      link:
+
+    - item: Video Games
+      link:
+
+    - item: Crochet
+      link:
+
+
+career-profile:
+  title: Summary
+  summary: |
+    Dedicated Senior Software Engineer with 19+ years of experience developing web applications. Skilled in agile development, object
+    oriented design, functional programming, automated testing, secure coding standards, refactoring legacy systems, mentoring team
+    members, and driving technical change. Dedicated to producing quality software and supporting collaboration.
+education:
+  title: Education
+  info:
+  - degree: MS in Information Technology
+    university: University of Maryland Global Campus
+    time: 2008 - 2010
+    # details: |
+    #   Describe your study here lorem ipsum dolor sit amet, consectetuer
+    #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+    #   sociis natoque penatibus et magnis dis parturient montes, nascetur
+    #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+    #   pretium quis, sem.
+    #     - Bullet point
+    #     - Bullet point
+  - degree: BS in Computer Science
+    university: Georgia Institute of Technology
+    time: 1999 - 2004
+    # details: |
+    #   Describe your study here lorem ipsum dolor sit amet, consectetuer
+    #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+    #   sociis natoque penatibus et magnis dis parturient montes, nascetur
+    #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+    #   pretium quis, sem.
+    #     - Bullet point
+    #     - Bullet point
+
+experiences:
+  title: Experience
+  info:
+  - role: Senior Software Engineer
+    time: 7/2016 - Present
+    company: Fearless LLC - Baltimore, MD
+    projects:
+      - name: CMS - OneMAC Upgrade 
+        time: 10/2024 – Present
+        details: |
+          - Developed a React web application with Lambda functions querying OpenSearch.
+          - Improved Vitest unit test coverage from 51.5% to 91.6% in less than 2 months.
+          - Created GitHub Actions to automatically publish testing reports and release notes to GitHub Pages site.
+        stack: React, TypeScript, Tailwind, AWS Lambda, OpenSearch, Vitest, Playwright, Bun, Mock Service Worker, Jekyll
+      - name: CDC - Data Exchange Upload API 
+        time: 8/2024 – 10/2024
+        details: |
+          - Developed an API endpoint in Golang server to determine the upload status of files being uploaded to a tus server.
+          - Developed a file upload status tracker written in JavaScript, HTML, CSS using a tus client to display the upload status.
+          - Developed a tus client context for use in Playwright tests to allow for testing server functions from within Playwright tests.
+        stack: JavaScript, HTML, CSS, Golang, TUS, Playwright, GitHub Actions
+      - name: SBA - The OII Rehoming Project 
+        time: 11/2023 – 8/2024
+        details: |
+          - Led 2 teams of 2 engineers in modernization of multiple disparate legacy systems into a single application; supported team members, developed code, documented processes, ensured code quality, collaborated with cross functional team members, gathered requirements from clients, and steered technical direction.
+          - Improved the development process of one team by implementing DevOps standards including source control, code reviews, automated tests and scans, and automated deployment.
+          - Developed a Lambda function in Python to read messages off of an AWS SQS queue and process them into the system.
+        stack: Python, Pytest, AWS Lambda, AWS SQS, Java
+      - name: NFL - Football Operations Database 
+        time: 6/2023 – 10/2023
+        details: |
+          - Led team of 3 engineers by architecting application using the latest industry standards, supporting team members, developing code, ensuring code quality, collaborating with cross functional team members, and steering technical direction.
+        stack: Next.js, React, TypeScript, Prisma, PostgreSQL, NextAuth.js, Okta, Tailwind, Headless UI, Storybook, Jest, React Testing Library, Mock Service Worker, Playwright
+      - name: CMS - MESHub 
+        time: 4/2023 – 11/2023
+        details: |
+          - Led team of 5 engineers by ensuring project quality, collaborating with cross functional team members, gathering requirements, and managing the transition of the contract from the eAPD application to the new MESHub application with new team members, technologies, objectives, and users.
+      - name: CMS - Electronic Advanced Planning Document 
+        time: 7/2020 – 4/2023
+        details: |
+          - Led team of 5 engineers in developing a React web application with a Node.js backend; assigned work, contributed code, supported team members, ensured code quality, documented processes, participated in user research sessions, and maintained road map focus.
+          - Re-architected code to use Okta for authentication and acted as a liaison with the CMS Okta team.
+          - Moved large JSON objects from a PostgreSQL database to MongoDB to provide faster speeds, more flexibility in queries, and more efficient updates of the data.
+        stack: React, Redux, React Hook Forms, Sass, Webpack, Node.js, Express, Knex, PostgreSQL, Mongoose, MongoDB, Okta, Cypress, Jest, React Testing Library
+      - name: Redacted 
+        time: 7/2017 – 7/2020
+        details: |
+          - Developed a React web application with Node.js microservices following the command-query (CQRS) model using RabbitMQ to communicate between services.
+          - Maintained Ruby script for ingesting data from 3rd party sources.
+          - Led the adoption of automated testing using Cypress, React Testing Library, and Jest.
+        stack: React, Redux, Sass, Webpack, Node.js, Express, Java, RabbitMQ, Elasticsearch, Kibana, Mongoose, MongoDB, Ruby, Cypress, React Testing Library, Jest
+      - name: NY Harbor Foundation - Billion Oyster Project 
+        time: 7/2016 – 9/2017
+        details: |
+          - Led team of 2 in daily stand-ups, sprint planning, sprint reviews, and retrospectives.
+          - Developed an Angular web application with a Node.js backend.
+        stack: Angular, Node.js, Express, MongoDB, Mocha, Protractor
+  #   details: |
+  #       - Developed a React web application with Lambda functions querying OpenSearch.
+  #       - Improved Vitest unit test coverage from 51.5% to 91.6% in less than 2 months.
+  #       - Created GitHub Actions to automatically publish testing reports and release notes to GitHub Pages site.
+  #       - Stack: React, TypeScript, Tailwind, AWS Lambda, OpenSearch, Vitest, Playwright, Bun, Mock Service Worker, Jekyll
+  - role: Senior Software Engineer
+    time: 2/2015 - 6/2016
+    company: CyberPoint International - Baltimore, MD
+    details: |
+      - Developed an Angular web application with a Node.js backend.
+      - Used Google Maps API and Mapbox for geolocating addresses inside bounding boxes.
+    stack: Angular, Node.js, Express, MongoDB, Google Maps API, Mapbox, Mocha
+  - role: Software Engineer
+    time: 8/2013 - 9/2014
+    company: Fearless LLC - Baltimore, MD
+    details: |
+      - Initiated complete refactoring of a single-page, 3.5k line, legacy application written in Java, including restructuring code into an MVC architecture, moving hard-coded values to a configuration database, and adding unit and integration tests using JUnit.
+      - Created an ExtJS web application to manage the configurations in the database, view dynamically generated time series charts, export the PNG version of the charts, and export CSV reports.
+    stack: Java, JPA, Oracle, Maven, Spring, ExtJS, JUnit
+  # - role: Senior Software Engineer
+  #   time: 2014 - 2015
+  #   company: Google, London
+  #   details: |
+  #     Describe your role here lorem ipsum dolor sit amet, consectetuer
+  #     adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+  #     Cum sociis natoque penatibus et magnis dis parturient montes,
+  #     nascetur ridiculus mus. Donec quam felis, ultricies nec,
+  #     pellentesque eu, pretium quis, sem.
+  #       - Bullet point
+  #       - Bullet point
+  # - role: UI Developer
+  #   time: 2012 - 2014
+  #   company: Amazon, London
+  #   details: |
+  #     Describe your role here lorem ipsum dolor sit amet, consectetuer
+  #     adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+  #     Cum sociis natoque penatibus et magnis dis parturient montes,
+  #     nascetur ridiculus mus. Donec quam felis, ultricies nec,
+  #     pellentesque eu, pretium quis, sem.
+  #       - Bullet point
+  #       - Bullet point
+
+# certifications:
+#   title: Certifications
+#   list:
+#   - name: CV Builder
+#     start: 2020
+#     end: 2021
+#     organization: Microsoft
+#     credentialid: 111-222
+#     credentialurl: www.google.com
+#     credentialname: Google
+#     details: |
+#       Details about cert. Lorem ipsum dolor sit amet, consectetur
+#       adipiscing elit.
+#       Nullam eget orci purus. Nullam ultrices neque nibh.
+#       Aenean fermentum, felis vulputate suscipit accumsan,
+#       sem enim bibendum augue, sed convallis arcu lacus at dui.
+#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#       Praesent venenatis erat non augue suscipit consectetur.
+
+#       Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+#       fringilla vel. Ut euismod, sem sed vulputate venenatis,
+#       justo diam viverra velit, sed rhoncus leo leo eu justo.
+#       Suspendisse placerat risus ante, sed porta nisi blandit at.
+#   - name: Git learning
+#     start: 2019
+#     end:
+#     organization: Microsoft
+#     credentialid: 111-222
+#     credentialurl: www.github.com
+#     credentialname: Github
+#     details: |
+#       Older certification. Lorem ipsum dolor sit amet, consectetur
+#       adipiscing elit.
+#       Nullam eget orci purus. Nullam ultrices neque nibh.
+#       Aenean fermentum, felis vulputate suscipit accumsan,
+#       sem enim bibendum augue, sed convallis arcu lacus at dui.
+#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#       Praesent venenatis erat non augue suscipit consectetur.
+
+projects:
+  title: Projects
+  # intro: >
+  #   You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  assignments:
+  - title: Publish Playwright
+    link: "https://github.com/FearlessSolutions/publish-playwright"
+    tagline: "Demonstrates how to use GitHub Actions to automatically publish Playwright and code coveage reports to a GitHub Pages reporting site"
+
+  - title: Jekyll Report Dashboard Theme
+    link: "https://github.com/FearlessSolutions/jekyll-report-dashboard"
+    tagline: "A Jekyll starter theme for displaying Playwright and code coverage reports in a GitHub Pages reporting site"
+
+# oss:
+#   title: OSS Contributions
+#   intro: >
+#     You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#   contributions:
+#   - title: Tempo
+#     link: "#"
+#     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+#   - title: Atom
+#     link: "#"
+#     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+#   - title: Delta
+#     link: "#"
+#     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+publications:
+  title: Publications
+  # intro: |
+  #   You can list your publications in this section. Lorem ipsum dolor sit
+  #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+  #   bibendum fringilla a eu lectus.
+  papers:
+  - title: The Design and Implementation of Multi-player Card Games on Multi-user Interactive Tabletop Surfaces
+    link: "https://link.springer.com/chapter/10.1007/978-3-540-28643-1_42"
+    authors: Shwetak N. Patel, John A. Bunch, Kyle D. Forkner, Logan W. Johnson, Tiffany M. Johnson, Michael N. Rosack & Gregory D. Abowd
+    conference: Entertainment Computing – ICEC, 2004
+
+# recommendations:
+#   title: Recommendations
+#   list:
+#   - person: Yareli Perez
+#     email: perezyareli@example.com
+#     phone: 012 345 6789
+#     role: General Director at example.com
+#     recommendation: |
+#       Alan Doe is a super employee!
+#   - person: Lara Henderson
+#     email: larah@example.com
+#     phone: 012 345 6789
+#     role: General Director at example.com
+#     recommendation: |
+#       I would like to work with Alan Doe again!
+
+#       He is a great employee!
+
+# skills:
+#   title: Skills &amp; Proficiency
+
+#   toolset:
+#   - name: Python & Django
+#     level: 98%
+
+#   - name: Javascript & jQuery
+#     level: 98%
+
+#   - name: Angular
+#     level: 98%
+
+#   - name: HTML5 & CSS
+#     level: 95%
+
+#   - name: Ruby on Rails
+#     level: 85%
+
+#   - name: Sketch & Photoshop
+#     level: 60%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
